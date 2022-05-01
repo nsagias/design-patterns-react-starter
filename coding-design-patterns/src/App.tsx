@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AbstractFactory from './components/abstractFactory/AbstractFactory';
+import AbstractFactoryFunctionBased from './components/abstractFactory/AbstractFactoryFunctionBased';
+import AbstractFactoryClassBased from './components/abstractFactory/AbstractFactoryClassBased';
+
 
 function App() {
   return (
@@ -9,7 +11,8 @@ function App() {
       <header className="App-header">
         <p>Design Patterns Starter</p>
       </header>
-      <AbstractFactory />
+      <AbstractFactoryClassBased name={"Nick ClassBased Abstract Factory"} />
+      <AbstractFactoryFunctionBased name={"Nick Function Abstract Factory"} />
     </div>
   );
 }
